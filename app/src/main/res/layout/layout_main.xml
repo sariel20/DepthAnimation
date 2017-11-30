@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<no.agens.depth.lib.DepthRendrer xmlns:android="http://schemas.android.com/apk/res/android"
+                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                 xmlns:tools="http://schemas.android.com/tools"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent"
+                                 android:background="#EED8AE"
+                                 android:layerType="hardware">
+
+    <ImageView
+        android:id="@+id/actionbar_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        />
+
+
+    <no.agens.depth.lib.DepthLayout
+        android:id="@+id/dl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="#EECFA1"
+        android:layerType="hardware"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="北上看到的冰川是你"
+            android:textColor="#ffffff"
+            android:textSize="15sp"/>
+    </no.agens.depth.lib.DepthLayout>
+
+    <no.agens.depth.lib.DepthLayout
+        android:id="@+id/dl3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dl2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#EECFA1"
+        android:layerType="hardware"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="南下追寻的极光是你"
+            android:textColor="#ffffff"
+            android:textSize="15sp"/>
+    </no.agens.depth.lib.DepthLayout>
+
+    <no.agens.depth.lib.DepthLayout
+        android:id="@+id/dl4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dl3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#EECFA1"
+        android:layerType="hardware"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="西去流浪的经幡是你"
+            android:textColor="#ffffff"
+            android:textSize="15sp"/>
+    </no.agens.depth.lib.DepthLayout>
+
+    <no.agens.depth.lib.DepthLayout
+        android:id="@+id/dl5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dl4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#EECFA1"
+        android:layerType="hardware"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="东去昄依的佛经也是你"
+            android:textColor="#ffffff"
+            android:textSize="15sp"/>
+    </no.agens.depth.lib.DepthLayout>
+
+    <no.agens.depth.lib.DepthLayout
+        android:id="@+id/dl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dl5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layerType="hardware">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/icon_main"/>
+    </no.agens.depth.lib.DepthLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="开始"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="移除"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="悬浮"/>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="重置"/>
+    </LinearLayout>
+</no.agens.depth.lib.DepthRendrer>
