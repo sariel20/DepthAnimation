@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="北上看到的冰川是你"
+            android:text="1"
             android:textColor="#ffffff"
             android:textSize="15sp"/>
     </no.agens.depth.lib.DepthLayout>
@@ -49,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="南下追寻的极光是你"
+            android:text="2"
             android:textColor="#ffffff"
             android:textSize="15sp"/>
     </no.agens.depth.lib.DepthLayout>
@@ -69,7 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="西去流浪的经幡是你"
+            android:text="3"
             android:textColor="#ffffff"
             android:textSize="15sp"/>
     </no.agens.depth.lib.DepthLayout>
@@ -89,7 +89,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="东去昄依的佛经也是你"
+            android:text="4"
             android:textColor="#ffffff"
             android:textSize="15sp"/>
     </no.agens.depth.lib.DepthLayout>

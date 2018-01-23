@@ -33,11 +33,6 @@ public class MainActivity extends Fragment {
             public void onGlobalLayout() {
                 root.getViewTreeObserver().removeOnGlobalLayoutListener(this);
                 TransitionHelper.startIntroAnim(root, showShadowListener);
-//                startIntroAnim(root, showShadowListener);//进入动画
-//                startExitAnim(root);//移除动画
-//                animateToMenuState(root, showShadowListener);//过渡暂停
-//                animateMenuOut(root);//平移效果移除
-//                startRevertFromMenu;//??
                 hideShadow();
             }
         });

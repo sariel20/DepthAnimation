@@ -110,12 +110,6 @@ public class TransitionHelper {
         exitAnimate((DepthLayout) root.findViewById(R.id.dl5), MOVE_Y_STEP, 20f, 105, 290, true);
     }
 
-    private static void hideStatusBar(View root) {
-        View decorView = ((Activity) root.getContext()).getWindow().getDecorView();
-        int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
-        decorView.setSystemUiVisibility(uiOptions);
-    }
-
 
     static ValueAnimator exitAnimate(final DepthLayout target, final float moveY, final float customElevation, long delay, int subtractDelay, boolean continueOffscreen) {
 
@@ -184,7 +178,6 @@ public class TransitionHelper {
     }
 
     public static void animateToMenuState(View root, AnimatorListenerAdapter onMenuAnimFinished) {
-//        hideStatusBar(root);
 
         exitAnimate((DepthLayout) root.findViewById(R.id.dl1), MOVE_Y_STEP * 2f, 20f, 505, 210, false);
         exitAnimate((DepthLayout) root.findViewById(R.id.dl2), MOVE_Y_STEP * 6f, 20f, 105, 230, false);
@@ -192,9 +185,6 @@ public class TransitionHelper {
         exitAnimate((DepthLayout) root.findViewById(R.id.dl4), MOVE_Y_STEP * 4f, 20f, 305, 270, false);
         exitAnimate((DepthLayout) root.findViewById(R.id.dl5), MOVE_Y_STEP * 3f, 20f, 405, 290, false).addListener(onMenuAnimFinished);
 
-//        ObjectAnimator translationY = ObjectAnimator.ofFloat(root, View.TRANSLATION_Y, -90f * root.getResources().getDisplayMetrics().density).setDuration(DURATION);
-//        translationY.setInterpolator(VALUEinterpolator);
-//        translationY.start();
     }
 
     private static void makeAppFullscreen(View target) {
